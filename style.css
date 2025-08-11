@@ -106,3 +106,120 @@ h1 {
 .secondary {
     background-color: var(--secondary-color);
 }
+
+section {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+section p {
+    margin-top: 1em;
+    font-size: 1.25rem;
+}
+
+section#my-work {
+    background-color: var(--color-3);
+}
+
+.grid-container {
+    margin-top: 3em;
+    margin-bottom: 3em;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "img-1 img-1 img-2 img-3"
+    "img-1 img-1 img-4 img-5";
+    gap: 1em;
+}
+
+.grid-container img {
+    height: 100%;
+    width: 100%;
+    border-radius: .5em;
+    transition: 100ms ease;
+}
+
+.grid-container img:hover {
+    scale: 1.05;
+}
+
+details {
+    margin-top: 1em;
+    background-color: var(--base-color);
+    border-radius: 1em;
+}
+
+details summary {
+    padding: 1em;
+    font-size: 1.7rem;
+    font-family: Merriweather, Poppins
+}
+
+details p {
+    padding: 0 2em 2em 2em;
+}
+
+footer {
+    padding-bottom: 1.5em;
+    text-align: center;
+}
+
+footer a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+@media(max-width: 988px){
+    header {
+        text-align: center;
+    }
+
+    header .text-container {
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 640px) {
+    nav li {
+        display: none;
+    }
+    
+    nav li:first-child,
+    nav ii:last-child {
+        display: block;
+    }
+
+    header {
+        margin-top: 0;
+    }
+
+    .cta-button {
+        margin-top: .5em;
+        width: 100%;
+    }
+
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-container p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
