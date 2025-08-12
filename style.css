@@ -33,13 +33,14 @@ h1, h2, h3 {
 nav {
     margin: 1e auto 3em auto;
     width: min(1000px, 100%);
+    margin-bottom: 20px;
 }
 
 nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    gap: 2em;
+    gap: 3em;
 }
 
 nav li:first-child{
@@ -60,7 +61,7 @@ nav a:hover {
 header, section {
     margin: 2em auto;
     width: min(75em, 100%);
-    /* background-color: var(--color-1); */
+    /* background-color: var(--color-1 ); */
     padding: min(2em, 15%);
     border-radius: 1em;
 }
@@ -119,6 +120,13 @@ h1 {
     background-color: black;
     color: white;
     transform: translateY(-2px);
+}
+
+.circle-image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .secondary {
