@@ -148,8 +148,9 @@ section p {
     font-size: 1.25rem;
 }
 
-section#my-work {
-    background-color: var(--color-3);
+section#about-me {
+    text-align: left;
+    line-height: 200%;
 }
 
 .grid-container {
@@ -174,6 +175,15 @@ section#my-work {
 
 .grid-container img:hover {
     scale: 1.05;
+}
+
+.indented-list {
+    margin-left: 20px;
+    padding-left: 20px;
+}
+
+.indented-list li {
+    margin-bottom: 5px;
 }
 
 details {
