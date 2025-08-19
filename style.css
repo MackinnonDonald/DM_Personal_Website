@@ -153,6 +153,12 @@ section#about-me {
     line-height: 200%;
 }
 
+.right_bullets {
+    list-style-image: url('images/angle_right.svg');
+    padding-left: 20px;
+    font-size: 1.1rem;
+}
+
 .grid-container {
     margin-top: 3em;
     margin-bottom: 3em;
@@ -215,6 +221,18 @@ footer a {
 
 footer a:hover{
     text-decoration: underline;
+}
+
+.footer_link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+.footer_icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 4px;
+    vertical-align: middle;
 }
 
 @media(max-width: 988px){
