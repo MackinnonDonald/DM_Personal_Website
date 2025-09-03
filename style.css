@@ -154,9 +154,28 @@ section#about-me {
 }
 
 .right_bullets {
-    list-style-image: url('images/angle_right.svg');
+    list-style: none;
     padding-left: 20px;
     font-size: 1.1rem;
+}
+
+.right_bullets li {
+    position: relative;
+    padding-left: 25px; /* Adjust based on your image size */
+}
+
+.right_bullets li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px; /* Set your desired width */
+    height: 16px; /* Set your desired height */
+    background-image: url('images/angle_right.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .image-grid {
