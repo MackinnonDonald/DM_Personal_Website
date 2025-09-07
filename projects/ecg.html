@@ -18,8 +18,50 @@
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section id="project">
+        <h2 style = "padding-top: 1em;">Description</h2>
+            <p>
+                This was the final project for EECE2150 Circuits and Signals. In this project, we had to design and make an ECG circuit to measure our own heart rates.
+                We used an AD627 Op Amp and a LT1490 Op Amp that was powered by 1.5 volts for the safety of the user. Once the op-amps were in place to amplify 
+                the recorded signal, both a low and high pass filter were built to remove any high frequency noise as well as the DC components 
+                of the AD627 respectively. For the high pass, a 6.8µF capacitor, 100kΩ (R) and 200kΩ resistor (Rf) were used. For the low pass,
+                a 2nF capacitor, 400kΩ (R) and 20kΩ (Rs) resistor were used. Once assembled, wires were connected to myself and my heart rate was measured
+                on the oscilloscope. Then an ADC was used to digitally record the signal and further process it on MATLAB. Below are the photos of the schematic and readings.
+                Lab reports for this are avaliable upon request.
+            </p>
+        <h2 style="padding-top: 1em;">Schematics</h2>
+            <div class="image-pair">
+                <div class="image-with-caption">
+                    <img src="project_photos/high_pass.png" alt="high-pass filter schematic">
+                    <p class="image-caption">High pass filter schematic</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/low_pass.png" alt="low-pass filter schematic">
+                    <p class="image-caption">Low pass filter schematic</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/ecg_path.png" alt="path of ecg signal">
+                    <p class="image-caption">Path of ECG circuit</p>
+                </div>
+            </div>
+        <h2 style="padding-top: 1em;">Circuit</h2>
+            <img src="project_photos/ecg_circuit.jpg" height="50%" width="50%">
+            <p class="image-caption">ECG circuit on protoboard</p>
+        <h2 style="padding-top: 1em;">Readings</h2>
+            <div class="image-pair">
+                <div class="image-with-caption">
+                    <img src="project_photos/ecg_reading.png" alt="ECG reading on oscilloscope">
+                    <p class="image-caption">ECG reading on oscilloscope</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/ecg_reading_matlab.png" alt="ECG reading on MATLAB">
+                    <p class="image-caption">ECG reading on MATLAB</p>
+                </div>
+            </div>
+        <h2 style="padding-top: 1em";>Next Steps</h2>
+            <ul style="padding-left: 3em; font-size: 1.1em;">
+                <li>Designing a PCB for the circuit</li>
+            </ul>
     </section>
     <footer>
         <a href="www.linkedin.com/in/donald-mackinnon05" target="_blank" class="footer_link">

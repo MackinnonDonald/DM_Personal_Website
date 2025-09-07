@@ -139,6 +139,12 @@ section {
     text-align: center;
 }
 
+section#project {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: left !important; 
+}
+
 h2 {
     font-size: 2rem;
 }
@@ -146,11 +152,6 @@ h2 {
 section p {
     margin-top: 1em;
     font-size: 1.25rem;
-}
-
-section#about-me {
-    text-align: left;
-    line-height: 200%;
 }
 
 .right_bullets {
@@ -532,4 +533,39 @@ footer a:hover{
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
+}
+
+.image-pair {
+    display: flex;
+    gap: 2em;
+    justify-content: center;
+    margin: 2em 0;
+    flex-wrap: wrap;
+}
+
+.image-with-caption {
+    flex: 1;
+    max-width: 400px;
+    text-align: center;
+}
+
+.image-with-caption img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5em;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.image-caption {
+    margin-top: 0.5em;
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .image-pair {
+        flex-direction: column;
+        align-items: center;
+    }
 }
