@@ -31,7 +31,7 @@ h1, h2, h3 {
 }
 
 nav {
-    margin: 1e auto 3em auto;
+    margin: 1em auto 3em auto;
     width: min(1000px, 100%);
     margin-bottom: 20px;
 }
@@ -143,6 +143,12 @@ section#project {
     padding: 3em min(2em, 15%);
     background-color: var(--color-2);
     text-align: left !important; 
+}
+
+section#about-me {
+    padding: 3em min(2em, 15%);
+    background-color: var(--color-2);
+    text-align: left !important;
 }
 
 h2 {
@@ -346,7 +352,7 @@ footer a:hover{
     }
     
     nav li:first-child,
-    nav ii:last-child {
+    nav i:last-child {
         display: block;
     }
 

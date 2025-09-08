@@ -18,8 +18,52 @@
             </ul>
         </nav>
     </header>
-    <section>
-
+    <section id="project">
+        <h2>Description</h2>
+            <p>
+                This project was for one of the labs in EECE2160 embedded design. The goal of this lab was the create an algorithmic-logic unit (ALU) on an
+                Intel DE1-SoC FPGA. The ALU operated on 8-bit unsigned integers and could do basic math (add, subtract, multiply, divide). 
+                The results of the math would then be displayed on the 7-segment displays on the board. Intel Quartus was used to program the board.
+                Before any math, the 7-segment displays had to be programmed to display integers. After that, mathematical functions were added using the 
+                IP catalog library on Intel Quartus. Switches and a multiplexer were programmed to correspond to numbers and functions. Once programmed, various
+                mathematical expressions were tested. Any lab reports regarding this lab are avaliable upon request.
+            </p>
+        <h2 style="padding-top: 1em;">Circuit for 8-bit Display</h2>
+            <img src="project_photos/8bit_display_circuit.png">
+        <h2 style="padding-top: 1em;">Photos of Display Functioning</h2>
+            <div class="image-pair">
+                <div class="image-with-caption">
+                    <img src="project_photos/display255.png" alt="8-bit display with 255 as input">
+                    <p class="image-caption">8-bit display with 255 as input</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/display99.png" alt="8-bit display with 99 as input">
+                    <p class="image-caption">8-bit display with 99 as input</p>
+                </div>
+            </div>
+        <h2 style="padding-top: 1em;">Circuit for 8-bit ALU</h2>
+            <img src="project_photos/8bit_alu_circuit.png">
+        <h2 style="padding-top: 1em;">Photos of ALU functioning</h2>
+            <div class="image-pair">
+                <div class="image-with-caption">
+                    <img src="project_photos/alu_add.png" alt="Addition using ALU (32+38)">
+                    <p class="image-caption">Addition using ALU (32+38)</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/alu_sub.png" alt="Subtraction using ALU (32-13)">
+                    <p class="image-caption">Subtraction using ALU (32-13)</p>
+                </div>
+            </div>  
+            <div class="image-pair">
+                <div class="image-with-caption">
+                    <img src="project_photos/alu_mult.png" alt="Multiplication using ALU (32*5)">
+                    <p class="image-caption">Multiplication using ALU (32*5)</p>
+                </div>
+                <div class="image-with-caption">
+                    <img src="project_photos/alu_div.png" alt="Division using ALU (32/4)">
+                    <p class="image-caption">Division using ALU (32/4)</p>
+                </div>
+            </div>      
     </section>
     <footer>
         <a href="www.linkedin.com/in/donald-mackinnon05" target="_blank" class="footer_link">
