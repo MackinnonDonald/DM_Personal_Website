@@ -79,7 +79,18 @@ ul, ol {
     width: 30px;
     height: 30px;
     position: relative;
-    z-index: 1001;
+    z-index: 1002; 
+}
+
+.mobile-nav-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    background-color: var(--base-color);
+    z-index: 1;
 }
 
 .hamburger {
@@ -395,6 +406,12 @@ section p {
     .flex-container img {
         max-width: 150px;
         height: auto;
+    }
+
+    .mobile-menu-toggle {
+        position: fixed !important;
+        right: 20px !important;
+        top: 25px !important;
     }
 }
 
