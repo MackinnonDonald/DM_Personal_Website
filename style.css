@@ -58,6 +58,18 @@ nav a:hover {
     text-decoration: underline;
 }
 
+img:not(.footer_icon){
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, ol {
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
 .mobile-menu-toggle {
     display: none;
     background: none;
@@ -195,6 +207,7 @@ header, section {
 
 header img {
     max-width: 100%;
+    height: auto;
     border-radius: 1em;
     object-fit: cover;
     object-position: bottom;
@@ -284,11 +297,16 @@ section p {
     list-style: none;
     padding-left: 20px;
     font-size: 1.1rem;
+    max-width: 100%;
+    box-sizing: border-box;
 }
 
 .right_bullets li {
     position: relative;
     padding-left: 25px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-bottom: 8px;
 }
 
 .right_bullets li::before {
@@ -355,6 +373,29 @@ section p {
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+    .right_bullets {
+        padding-left: 10px; 
+        font-size: 1rem; 
+    }
+    
+    .right_bullets li {
+        padding-left: 20px; 
+    }
+    
+    .right_bullets li::before {
+        width: 14px; 
+        height: 14px;
+    }
+    
+    details ul {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .flex-container img {
+        max-width: 150px;
+        height: auto;
+    }
 }
 
 @media (max-width: 480px) {
@@ -389,6 +430,31 @@ details p {
     padding: 0 2em 2em 2em;
 }
 
+details ul {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+details ul li {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    text-align: left;
+}
+
+section {
+    overflow-x: hidden;
+}
+
+section img {
+    max-width: 100%;
+    height: auto;
+}
+
+.right_bullets a,
+details a {
+    word-break: break-all;
+}
+
 footer {
     padding-bottom: 1.5em;
     text-align: center;
@@ -415,6 +481,8 @@ footer a:hover{
     margin-bottom: 4px;
     vertical-align: middle;
     border-radius: 0%;
+    display: inline-block;
+    max-width: none;
 }
 
 @media(max-width: 768px) {
@@ -494,6 +562,31 @@ footer a:hover{
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    header img {
+        width: 100%;
+        max-width: 300px; 
+        height: auto;
+    }
+
+    .right_bullets {
+        padding-left: 5px;
+        font-size: 0.95rem;
+    }
+    
+    .right_bullets li {
+        padding-left: 18px;
+        line-height: 1.6;
+    }
+    
+    section ul li {
+        word-break: break-word;
+        hyphens: auto;
+    }
+
+    .flex-container img:not(header img) {
+        max-width: 120px;
     }
 }
 
