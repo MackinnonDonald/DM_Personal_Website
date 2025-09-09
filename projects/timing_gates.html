@@ -11,10 +11,29 @@
         <nav>
             <ul>
                 <li style="font-size: 24px;"><a href="../index.html">Donald Mackinnon</a></li>
-                <li><a href="../resume/resume.html" class="pill-button">Resume</a></li>
-                <li><a href="projects.html" class="pill-button">Projects</a></li>
-                <li><a href="../sketches/sketches.html" class="pill-button">Sketches</a></li>
-                <li><a href="../contact/contact.html" class="pill-button">Contact</a></li>
+                <div class="desktop-nav-items">
+                    <li><a href="../resume/resume.html" class="pill-button">Resume</a></li>
+                    <li><a href="../projects/projects.html" class="pill-button">Projects</a></li>
+                    <li><a href="../sketches/sketches.html" class="pill-button">Sketches</a></li>
+                    <li><a href="../contact/contact.html" class="pill-button">Contact</a></li>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </button>
+            </ul>
+        </nav>
+
+        <div class="mobile-backdrop" id="mobileBackdrop"></div>
+        <nav class="mobile-nav-overlay" id="mobileNav">
+            <ul>
+                <li><a href="../resume/resume.html">Resume</a></li>
+                <li><a href="../projects/projects.html">Projects</a></li>
+                <li><a href="../sketches/sketches.html">Sketches</a></li>
+                <li><a href="../contact/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -53,5 +72,6 @@
         <a href="projects.html">My Projects</a>
         <a href="../contact/contact.html">Contact</a>
     </footer>
+    <script src="../mobile_menu.js"></script>
 </body>
 </html>
